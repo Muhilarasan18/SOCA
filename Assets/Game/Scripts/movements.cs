@@ -7,7 +7,7 @@ public class movements : MonoBehaviour
 {
     public Animator PlayerAnim;
     public Rigidbody PlayerRigid;
-    public float Walk_speed, run_speed, Runback_speed, olj_speed, ro_speed;
+    public float Walk_speed, run_speed, Runback_speed, olj_speed, Olb_speed, ro_speed;
     public bool walking;
     public Transform PlayerTrans;
 
@@ -75,7 +75,8 @@ public class movements : MonoBehaviour
                 Walk_speed = olj_speed;
                 PlayerAnim.SetTrigger("Walk");
                 PlayerAnim.ResetTrigger("Run");
-            }
+            }          
+           
         }
         
         else
